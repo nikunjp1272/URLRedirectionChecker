@@ -1,11 +1,14 @@
-URLRedirectionChecker
-Overview
+# URLRedirectionChecker
+
+## Overview
+
 URLRedirectionChecker is a modular Python toolkit designed to analyze URL redirection chains, check HTTP status codes, validate content types, and assess URLs for potential risks (e.g., being on a blocklist or whitelist). The project progresses through several stages, starting from simple status code checks to advanced redirection tracing with content validation.
 
 This is particularly useful for security analysts, penetration testers, or developers who want to understand how URLs behave and whether they redirect to unsafe or unexpected destinations.
 
-Project Structure
+## Project Structure
 
+```bash
 URLRedirectionChecker-main/
 │
 ├── CheckingHTTPStatus/
@@ -30,6 +33,7 @@ URLRedirectionChecker-main/
 │
 └── URLRedirectionChecker/
     └── URLRedirectionChecker.py           # Final, consolidated script
+```
 
 Features
 ✅ Progressive development:
