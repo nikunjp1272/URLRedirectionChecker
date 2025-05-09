@@ -35,10 +35,6 @@ URLRedirectionChecker-main/
     └── URLRedirectionChecker.py           # Final, consolidated script
 ```
 
-# URLRedirectionChecker (Partial README)
-
-This `README.md` provides information based on the text snippet provided. A full `README.md` would typically include an overview and project structure.
-
 ## Features
 
 ✅ Progressive development:
