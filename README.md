@@ -35,40 +35,41 @@ URLRedirectionChecker-main/
     └── URLRedirectionChecker.py           # Final, consolidated script
 ```
 
-Features
+# URLRedirectionChecker (Partial README)
+
+This `README.md` provides information based on the text snippet provided. A full `README.md` would typically include an overview and project structure.
+
+## Features
+
 ✅ Progressive development:
-Start with just checking HTTP status codes
-Move on to basic connectivity
-Implement redirection tracking
-Add content-type validation
-End with a complete consolidated checker
+* Start with just checking HTTP status codes
+* Move on to basic connectivity
+* Implement redirection tracking
+* Add content-type validation
+* End with a complete consolidated checker
 
 🌐 Multiple libraries used:
-requests
-http.client
-urllib3
+* requests
+* http.client
+* urllib3
 
 🔁 Redirection support:
-Tracks multiple redirects up to a configurable limit
-Displays intermediate and final destination URLs
+* Tracks multiple redirects up to a configurable limit
+* Displays intermediate and final destination URLs
 
 ⚠️ Content validation:
-Detects non-HTML content in the redirection chain
-Stops analysis if suspicious content-type is encountered
+* Detects non-HTML content in the redirection chain
+* Stops analysis if suspicious content-type is encountered
 
 🔒 Blocklist/Whitelist support (planned):
-Integration with blocklist aggregators or local caches (dictionary-based)
-Intended to flag malicious or trusted domains
+* Integration with blocklist aggregators or local caches (dictionary-based)
+* Intended to flag malicious or trusted domains
 
-Usage
+## Usage
 
 To use the final tool:
+
+```bash
 cd URLRedirectionChecker/URLRedirectionChecker
 python URLRedirectionChecker.py
-You’ll be prompted to enter multiple URLs separated by commas. The script will:
-
-Connect to each URL.
-Check HTTP status.
-Follow redirections.
-Validate content types.
-(Optional) Flag any blacklisted or whitelisted domains.
+```
