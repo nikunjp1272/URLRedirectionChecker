@@ -5,15 +5,15 @@ This file provides a comprehensive list of HTTP status codes, their descriptions
 ## 1xx Informational
 
 ### 100 Continue
-**Description:** The server has received the request headers, and the client should proceed to send the request body.
+**Description:** The server has received the request headers, and the client should proceed to send the request body.<br/>
 **Resolution:** This is an intermediate response. The client should continue sending the request. If the server doesn't send a final response, there might be a network issue or a problem with the server's handling of the request body.
 
 ### 101 Switching Protocols
-**Description:** The server is switching protocols as requested by the client's Upgrade header.
+**Description:** The server is switching protocols as requested by the client's Upgrade header.<br/>
 **Resolution:** This is usually handled automatically by the client and server. If issues arise, ensure both client and server are configured correctly for the agreed-upon protocol.
 
 ### 102 Processing (WebDAV)
-**Description:** The server has received and is processing the request, but no response is yet available.
+**Description:** The server has received and is processing the request, but no response is yet available.<br/>
 **Resolution:** This indicates the server is taking longer than usual. The client should wait for the final response. If it takes excessively long, there might be a server-side performance issue.
 
 ### 103 Early Hints
