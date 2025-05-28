@@ -71,7 +71,7 @@ URLRedirectionChecker-main/
 
 You can use URLRedirectionChecker either by running the Python script directly (for development or specific testing) or by using the **recommended Dockerized version** for enhanced safety and ease of use.
 
-### Option 1: Using the Docker Image (Recommended for Safety)
+### Using the Docker Image (Recommended for Safety)
 
 The Docker image encapsulates the `URLRedirectionChecker.py` script and its dependencies, providing an isolated environment for checking URLs. This is crucial as it prevents potentially malicious URLs from directly affecting your local system.
 
