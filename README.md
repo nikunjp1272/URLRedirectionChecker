@@ -65,8 +65,6 @@ URLRedirectionChecker-main/
 * 🔒 **Enhanced Safety with Docker:**
     * All URL checks run within an isolated container, protecting your host system.
     * **Automatic Shutdown for Malicious URLs:** If a URL is identified as malicious (based on the defined `MALICIOUS_DOMAINS`), the container will automatically terminate, preventing further execution and alerting the user.
-    * **Blocklist/Whitelist support (planned):** Integration with blocklist aggregators or local caches (dictionary-based) intended to flag malicious or trusted domains.
-
 ---
 
 ## Usage
