@@ -12,6 +12,7 @@ This tool is particularly useful for security analysts, penetration testers, or 
 
 ## Project Structure
 
+```bash
 URLRedirectionChecker-main/
 │
 ├── CheckingHTTPStatus/
@@ -39,4 +40,4 @@ URLRedirectionChecker-main/
 │
 ├── Dockerfile                             # Instructions to build the Docker image
 └── requirements.txt                       # Python dependencies for the Docker image
-
+```
