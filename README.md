@@ -1,10 +1,12 @@
 # URLRedirectionChecker
 
+---
+
 ## Overview
 
-URLRedirectionChecker is a modular Python toolkit designed to analyze URL redirection chains, check HTTP status codes, validate content types, and assess URLs for potential risks (e.g., being on a blocklist or whitelist). The project progresses through several stages, starting from simple status code checks to advanced redirection tracing with content validation.
+**URLRedirectionChecker** is a modular Python toolkit designed to analyze URL redirection chains, check HTTP status codes, validate content types, and assess URLs for potential risks (e.g., being on a blocklist or whitelist). The project progresses through several stages, starting from simple status code checks to advanced redirection tracing with content validation.
 
-This is particularly useful for security analysts, penetration testers, or developers who want to understand how URLs behave and whether they redirect to unsafe or unexpected destinations, all within the safety of an isolated Docker container.
+This tool is particularly useful for security analysts, penetration testers, or developers who want to understand how URLs behave and whether they redirect to unsafe or unexpected destinations, all within the safety of an isolated Docker container.
 
 ---
 
@@ -38,47 +40,3 @@ URLRedirectionChecker-main/
 ├── Dockerfile                             # Instructions to build the Docker image
 └── requirements.txt                       # Python dependencies for the Docker image
 
----
-
-## Features
-
-✅ **Progressive development:**
-* Start with just checking HTTP status codes
-* Move on to basic connectivity
-* Implement redirection tracking
-* Add content-type validation
-* End with a complete consolidated checker
-🌐 **Multiple libraries used:**
-* `requests`
-* `http.client`
-* `urllib3`
-🔁 **Redirection support:**
-* Tracks multiple redirects up to a configurable limit
-* Displays intermediate and final destination URLs
-⚠️ **Content validation:**
-* Detects non-HTML content in the redirection chain
-* Stops analysis if suspicious content-type is encountered
-🔒 **Enhanced Safety with Docker:**
-* All URL checks run within an isolated container, protecting your host system.
-* **Automatic Shutdown for Malicious URLs:** If a URL is identified as malicious (based on the defined `MALICIOUS_DOMAINS`), the container will automatically terminate, preventing further execution and alerting the user.
-* **Blocklist/Whitelist support (planned):** Integration with blocklist aggregators or local caches (dictionary-based) intended to flag malicious or trusted domains.
-
----
-
-## Usage
-
-You can use URLRedirectionChecker either by running the Python script directly (for development or specific testing) or by using the **recommended Dockerized version** for enhanced safety and ease of use.
-
-### Option 1: Using the Docker Image (Recommended for Safety)
-
-The Docker image encapsulates the `URLRedirectionChecker.py` script and its dependencies, providing an isolated environment for checking URLs. This is crucial as it prevents potentially malicious URLs from directly affecting your local system.
-
-**1. Install Docker:**
-   If you don't have Docker installed, follow the official Docker installation guide for your operating system: [Get Docker](https://docs.docker.com/get-docker/)
-
-**2. Pull the Docker Image:**
-   Pull the latest version of the `URLRedirectionChecker` image from Docker Hub:
-
-   ```bash
-   docker pull [your_dockerhub_username]/url-redirect-checker:latest
-```
