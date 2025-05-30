@@ -4,9 +4,9 @@
 
 ## Overview
 
-**URLRedirectionChecker** is a modular Python toolkit designed to analyze URL redirection chains, check HTTP status codes, validate content types, and assess URLs for potential risks (e.g., being on a blocklist or whitelist). The project progresses through several stages, starting from simple status code checks to advanced redirection tracing with content validation.
+**URLRedirectionChecker** is a modular Python toolkit designed to analyze URL redirection chains, check HTTP status codes, validate content types, and assess URLs for potential risks (e.g., being on a blocklist or whitelist). The project progresses through several stages, starting with simple status code checks and advancing to advanced redirection tracing with content validation.
 
-This tool is particularly useful for security analysts, penetration testers, or developers who want to understand how URLs behave and whether they redirect to unsafe or unexpected destinations, all within the safety of an isolated Docker container.
+This tool is handy for security analysts, penetration testers, or developers who want to understand how URLs behave and whether they redirect to unsafe or unexpected destinations, all within the safety of an isolated Docker container.
 
 ---
 
