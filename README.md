@@ -38,8 +38,10 @@ URLRedirectionChecker-main/
 ├── URLRedirectionChecker/
 │   └── URLRedirectionChecker.py           # Final, consolidated script (now Dockerized)
 │
-├── Dockerfile                             # Instructions to build the Docker image
-└── requirements.txt                       # Python dependencies for the Docker image
+├── DockerIntegration/
+    └── Dockerfile                             # Instructions to build the Docker image
+    └── requirements.txt                       # Python dependencies for the Docker image
+
 ```
 
 ---
