@@ -84,6 +84,5 @@ The Docker image encapsulates the `URLRedirectionChecker.py` script and its depe
     Pull the latest version of the `URLRedirectionChecker` image from Docker Hub:
 
     ```bash
-    docker pull [your_dockerhub_username]/url-redirect-checker:latest
+    docker pull n1k1272/url-redirect-checker:latest
     ```
-    *(Replace `[your_dockerhub_username]` with your actual Docker Hub username)*
